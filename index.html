@@ -4,45 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/3ad5c36c05.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
 <body>
-  <main>
-    <div class="container">
-      <div class="files">
-        <object data="images/logo.svg">logo</object>
-        <div class="file-types">
-          <object data="images/icon-document.svg" class="file-icons">Document icon</object>
-          <object data="images/icon-folder.svg" class="file-icons">Folder icon</object>
-          <object data="images/icon-upload.svg" class="file-icons">Upload icon</object>
-        </div>
+  <main class="container">
+    <div class="icons">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo">
       </div>
-      <div class="storage">
-        <header class="used">
-          You’ve used <span>815 GB</span> of your storage
-        </header>
-        <div class="storage-bar">
-          <div class="grad"><span class="dot"></span></div>
-        </div>
-        <div class="gigabyte">
-          <h4>0 GB</h4>
-          <h4>1000 GB</h4>
-        </div>
-      </div>
-      <div class="space-left">
-        <span class="number">185</span> GB LEFT
-      </div>
+      <ul class="files">
+        <li><i class="fas fa-file"></i></li>
+        <li><i class="fas fa-folder"></i></li>
+        <li><i class="fas fa-cloud-upload-alt"></i></li>
+      </ul>
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Malesela Kgobe</a>.
+    <div class="storage">
+      <div class="storage-details">
+        <p>You’ve used <span>815 GB</span>  of your storage</p>
+        <div class="storage-bar">
+          <div class="bar"><i class="fas fa-circle"></i></div>
+        </div>
+        <div class="amount">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+      <div class="data-left">
+        <p><span>185</span> GB Left</p>
+        <svg>
+          <polygon points="0 0, 35 35,35 0">
+        </svg>
+      </div>
     </div>
   </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Malesela Kgobe</a>.
+  </footer>
 </body>
 </html>
